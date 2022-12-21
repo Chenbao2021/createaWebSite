@@ -1,0 +1,23 @@
+.appNavbar{
+  display: flex;
+  justify-content: center;
+/* 
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid; */
+
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.appContainer{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f2f0f0;
+  /* background-color: aqua; */
+
+  padding-bottom: 15vh;
+
+  /* background: linear-gradient(white, orange,yellow,green); */
+}

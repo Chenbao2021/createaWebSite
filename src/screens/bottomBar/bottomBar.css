@@ -1,0 +1,132 @@
+
+html,body{
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline:none;
+
+    /* background-color: black; */
+}
+.bottomContainer, .commandesContainer, .instagram, .icons{
+    display: none;
+}
+
+    
+.commandesDisplayContainer{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    background: linear-gradient(white, orange,yellow,green);
+    width: 30vw;
+    height: 30vw;
+
+    border: 1px solid black;
+    border-radius: 3vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw;
+
+    font-size: 2vw;
+
+}
+.commandesRow{
+    display: flex;
+    justify-content: space-around;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px black solid; */
+    margin: 1vw;
+}
+@media screen and (max-width:600px) {
+    .bottomBarContainer {
+        position:fixed;
+        bottom: 0%;
+        /* transform: translate(-50%,0); */
+    
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+    
+        border: 1px black solid;
+        background: linear-gradient(white, orange);
+    
+        transition: all 1s ease-out;
+    
+        /* opacity: 0.7; */
+    }
+    .commandesContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0.95;
+        /* background-color: black; */
+    }
+    .commandesContainer:active {
+        transform: scale(0.90);
+    }
+    .commandesButton{
+        height: 6vh;
+        /* background-color: black; */
+    }
+    .commandesContainer p{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .instagram { 
+        width: 20vw;
+        height:10vh;
+    
+        padding: 2vh;
+        border-right: 1px solid black;
+        
+        display: initial;
+    }
+    
+    .commandesDisplayContainer{
+        position:fixed;
+        bottom:10%;
+        left:50%;
+        transform: translate(-50%,-20%);
+    
+        background: linear-gradient(white, orange,yellow,green);
+        width: 70vw;
+        height: 70vw;
+    
+        border: 1px solid black;
+        border-radius: 10vw;
+
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5vw;
+
+        font-size: 4vw;
+
+    }
+    .commandesRow{
+        display: flex;
+        justify-content: space-around;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px black solid; */
+        margin: 2vw;
+    }
+}

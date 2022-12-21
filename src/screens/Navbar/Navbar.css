@@ -1,0 +1,99 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+    height: 8vh;
+    width: 80vw;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.7vh;
+    margin-top: 2vh;
+
+
+    border-radius: 5vw;
+    margin-bottom: 3vh;
+}
+
+.navbar img{
+    height: 200%;
+}
+
+.navbarRL {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.navbarRLContainer{
+    display: flex;
+    flex-grow: 1;
+    width: 95vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar button{
+    font-family: serif;
+    font-size: 1.5vw;
+}
+
+
+.instagramNavbar a {
+    margin-right: 1vw;
+    width: 3vw;
+}
+
+.navbarRL div {
+    height: 6vh;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4vw;
+}
+
+/*----------------Responsive-------------------*/
+@media screen and (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+        height: 20vh;
+        margin-bottom: 5vh;
+    }
+    .navbarRL{
+        flex-direction: row;
+        width: 80vw;
+        height: 5vh;
+        
+        margin-top: 1vh;
+
+    }
+
+    .navbarRL div {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+
+        border-radius: 4vw;
+    }
+
+    .instagramNavbar a, .instagramNavbar div{
+        display: none;
+    }
+
+    .navbar button{
+        font-size: 4vw;
+
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar img{
+        height: 110%;
+    }
+}
